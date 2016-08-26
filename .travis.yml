@@ -1,5 +1,8 @@
 install: make get-deps
-./configure && make && make test
+mkdir build
+cd build
+cmake ..
+make && make test
 language: c
 compiler:
   - clang
