@@ -1,4 +1,6 @@
-language: C
+install: make get-deps
+./configure && make && make test
+language: c
 compiler:
   - clang
   - gcc
